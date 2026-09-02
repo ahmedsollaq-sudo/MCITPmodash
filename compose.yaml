@@ -4,7 +4,7 @@ services:
     image: mcit-pmo-dashboard:29
     container_name: mcit-pmo-dashboard
     ports:
-      - "8080:8768"
+      - "8081:8768"
     volumes:
       - ./data:/data
     environment:
