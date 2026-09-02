@@ -175,7 +175,7 @@ class Handler(SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     initialize_data_files()
     host = os.environ.get("MCIT_HOST", "127.0.0.1")
-    port = int(os.environ.get("MCIT_PORT", "8765"))
+    port = int(os.environ.get("MCIT_PORT", "8768"))
     browser_url = f"http://127.0.0.1:{port}"
     print(f"MCIT PMO Dashboard: {browser_url}")
     print("Keep this window open. Press Ctrl+C to stop.")

@@ -4,7 +4,10 @@ services:
     image: mcit-pmo-dashboard:29
     container_name: mcit-pmo-dashboard
     ports:
-      - "8765:8765"
+      - "8080:8768"
     volumes:
       - ./data:/data
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8768
     restart: unless-stopped
