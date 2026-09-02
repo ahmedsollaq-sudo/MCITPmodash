@@ -1,0 +1,10 @@
+services:
+  mcit-pmo-dashboard:
+    build: .
+    image: mcit-pmo-dashboard:29
+    container_name: mcit-pmo-dashboard
+    ports:
+      - "8765:8765"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
