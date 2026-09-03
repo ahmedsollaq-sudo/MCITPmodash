@@ -7,6 +7,6 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
-start "" http://localhost:8765
-echo MCIT PMO Dashboard is running at http://localhost:8765
+start "" http://localhost:8768
+echo MCIT PMO Dashboard is running at http://localhost:8768
 pause
