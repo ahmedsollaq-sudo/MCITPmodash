@@ -1,0 +1,14 @@
+services:
+  mcit-pmo-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mcit-pmo-dashboard
+    ports:
+      - "8081:8768"
+    volumes:
+      - ./data:/data
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8768
+    restart: unless-stopped
