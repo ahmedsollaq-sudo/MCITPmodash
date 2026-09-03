@@ -11,6 +11,6 @@ ENV MCIT_HOST=0.0.0.0 \
 
 RUN mkdir -p /data
 
-EXPOSE 8765
+EXPOSE 8768
 
 CMD ["python", "server.py"]
